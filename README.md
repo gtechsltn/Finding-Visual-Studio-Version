@@ -55,7 +55,7 @@ Physical Path: C:\Program Files\Microsoft Visual Studio\2022\Enterprise
 
 ## MSBuild: Build Solution TSDataExport.sln
 
-C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\**MSBuild.exe**
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe
 
 ```
     Set-Location -Path 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin' -PassThru	
