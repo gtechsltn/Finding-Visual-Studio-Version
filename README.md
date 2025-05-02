@@ -52,3 +52,24 @@ DisplayName: Visual Studio Enterprise 2022
 Version: 17.13.35507.96
 Physical Path: C:\Program Files\Microsoft Visual Studio\2022\Enterprise
 ```
+
+## MSBuild: Build Solution TSDataExport.sln
+
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\**MSBuild.exe**
+
+```
+    Set-Location -Path 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin' -PassThru	
+     .\MSBuild 'D:\D2\ThirdSight.DataMigration\Src\TSDataExport.sln' -ts 'D:\D2\ThirdSight.DataMigration\Src\TSDataExport\TSDataExport.csproj' /p:Configuration=Release /p:Platform="Any CPU" 
+    Write-Host "Restoring NuGet packages: DONE" -ForegroundColor DarkGreen -BackgroundColor Black
+    Write-Host "------------------------------------------------------------" -ForegroundColor DarkGreen -BackgroundColor Black
+
+    Set-Location -Path 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin' -PassThru
+     .\MSBuild 'D:\D2\ThirdSight.DataMigration\Src\TSDataExport.NoDB.sln' /p:Configuration=Release /p:Platform="Any CPU" 
+    Write-Host "MSBuild.exe TSDataExport.NoDB.sln: DONE" -ForegroundColor DarkGreen -BackgroundColor Black
+    Write-Host "------------------------------------------------------------" -ForegroundColor DarkGreen -BackgroundColor Black
+
+    Set-Location -Path 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin' -PassThru	
+     .\MSBuild 'D:\D2\ThirdSight.DataMigration\Src\TSDataExport.sln' /p:Configuration=Release /p:Platform="Any CPU" 
+    Write-Host "Restoring NuGet packages: DONE" -ForegroundColor DarkGreen -BackgroundColor Black
+    Write-Host "------------------------------------------------------------" -ForegroundColor DarkGreen -BackgroundColor Black
+```
