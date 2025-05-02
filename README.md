@@ -1,6 +1,6 @@
 # Finding Visual Studio Version
-+ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\**devenv.exe**
-+ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\**MSBuild.exe**
++ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.exe
++ C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\MSBuild.exe
 
 ## VSSetupCheck.ps1
 ```
